@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca3491e339f84ad2a661d458a38ee2e, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  highScoreLimitation: 10
+  playerInfo:
+    player: {fileID: 0}
+    energy: 100
+    lifeCount: 3
+  backGrounds:
+  - name: Base
+    backList:
+    - {fileID: 1602148030372844, guid: cec9e8291c9aa4696bd5256b122dbbaa, type: 2}
+  - name: Sea
+    backList:
+    - {fileID: 1057444210281570, guid: acdd8c2ae87a445709d213cd2680c239, type: 2}
+  - name: BG01
+    backList:
+    - {fileID: 1992770392053610, guid: 40380e267a17e4810969df74599e957c, type: 2}
+    - {fileID: 1014938745153000, guid: a68d484aa6f8c48cca4c4429d5700dd4, type: 2}
+    - {fileID: 1399620396255698, guid: 90af42eaf00e146f696c67874709f5a4, type: 2}
+    - {fileID: 1116080643171562, guid: 2ec14c60a32bb4d99b761be259271004, type: 2}
+    - {fileID: 1657805296246920, guid: 1cca562d422d34c129f28bf57f76e313, type: 2}
+    - {fileID: 1187406635449380, guid: 8549d0ca4f2a44c3186cc3985bb880ce, type: 2}
+    - {fileID: 1671590539446666, guid: c45dafb32505642698479e9422fe7e1e, type: 2}
+    - {fileID: 1911772742292876, guid: 56c1b2df1d2db489082e5597a5deb30c, type: 2}
+    - {fileID: 1376609240555388, guid: 43ca3d511835240278a1c491e6160c57, type: 2}
+    - {fileID: 1558797331586696, guid: 9ad8b516f87d4459fb175c65927eace5, type: 2}
+    - {fileID: 1527983992984176, guid: 94730eff3e76a4603aa6e5ba281bec6b, type: 2}
+    - {fileID: 1832346444632098, guid: 9533f9e683ec540188b836ba61a6bf71, type: 2}
+  - name: BG02
+    backList:
+    - {fileID: 1723305399456686, guid: 835dacce74b3343748149e67889172ab, type: 2}
+    - {fileID: 1595278967577154, guid: 3e45c3363e1da4c1cab95cf557faf220, type: 2}
+    - {fileID: 1453725441535162, guid: 04ec6c90186504c3f914a36a9ac7d5d6, type: 2}
+    - {fileID: 1867936034797294, guid: 49a59b3a7fead42819baec038851758f, type: 2}
+    - {fileID: 1300644119442276, guid: 119c8c976f6324447be228ae233671ab, type: 2}
+    - {fileID: 1794140397879660, guid: 8c7f91514ad84426294d7293e725fd77, type: 2}
+    - {fileID: 1276763667372530, guid: 790739731a1dc4e9d8b9e328c9edb397, type: 2}
+    - {fileID: 1507864076534754, guid: 28afe448c624f476fae950a3d15ae9cf, type: 2}
+    - {fileID: 1829832855185334, guid: b22397a48ccaa4b818fd68fe9e473b2a, type: 2}
+    - {fileID: 1078094206678690, guid: 994387e40fc284f3790337682eb11c7f, type: 2}
+    - {fileID: 1583819878816052, guid: 33b577636701442368889c7a7bb2a259, type: 2}
+    - {fileID: 1267129256962260, guid: c928e33be2d394fde8fa0725dc4a4c79, type: 2}
+  stageList:
+  - mapList:
+    - bgGroupName: Base
+      repeatCount: 1
+    - bgGroupName: Sea
+      repeatCount: 5
+    - bgGroupName: BG01
+      repeatCount: 1
+    - bgGroupName: Sea
+      repeatCount: 0
+    waveList:
+    - distance: 100
+      spawnList:
+      - plane: {fileID: 1228060485970940, guid: 722e84f484d0b4a148af659abe15f41a,
+          type: 2}
+        count: 4
+        spawnIndex: 0
+        spawnOffset: 20
+        interval: 1.2
+        energy: 10
+        speed: 30
+      - plane: {fileID: 1228060485970940, guid: 722e84f484d0b4a148af659abe15f41a,
+          type: 2}
+        count: 6
+        spawnIndex: 2
+        spawnOffset: 20
+        interval: 1
+        energy: 10
+        speed: 40
+      timeLimit: 0
+    - distance: 300
+      spawnList:
+      - plane: {fileID: 1228060485970940, guid: 722e84f484d0b4a148af659abe15f41a,
+          type: 2}
+        count: 5
+        spawnIndex: 1
+        spawnOffset: 20
+        interval: 1.4
+        energy: 30
+        speed: 45
+      - plane: {fileID: 1228060485970940, guid: 722e84f484d0b4a148af659abe15f41a,
+          type: 2}
+        count: 4
+        spawnIndex: 3
+        spawnOffset: 20
+        interval: 2
+        energy: 10
+        speed: 20
+      - plane: {fileID: 1164886641346546, guid: de7b932ec3c3b4d18878afcdda683f52,
+          type: 2}
+        count: 1
+        spawnIndex: 3
+        spawnOffset: 0
+        interval: 0
+        energy: 200
+        speed: 30
+      timeLimit: 0
+    winningCondition:
+      bossKills: 1
+      fighterKills: 0
+      winingScore: 0
+  highScores: []
