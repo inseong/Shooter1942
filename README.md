@@ -22,7 +22,8 @@
 - it is possible to design more stages by modifying Assets/Resouces/GameData.asset
 - Game Data Structure
 
-####   StageInfo
+```
+    * StageInfo
         Map List
              Background image group
         Wave List
@@ -36,10 +37,11 @@
                  Energy
                  Speed
             Time Limit            - can limit a playing time in a wave (not completed)
-####   Winning Condition
-        Boss kill count 
-        Fighter kill count
-        Winning score
+        Winning Condition
+            Boss kill count 
+            Fighter kill count
+            Winning score
+```
 
 ### Finite State Machine
 - managing all procedures by the FSM
